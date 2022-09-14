@@ -1,0 +1,201 @@
+:root {
+  --orange-dark: #FE5E35;
+  --white: #fff;
+  --yellow: #FBD104;
+  --tomato: #FE5E35;
+  --black: #000;
+  --grey-light:#7e7e7e;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 30px 0 30px 60px;
+}
+
+.nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.nav-item {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+}
+
+.nav-item.active-item {
+  color: var(--orange-dark);
+  font-weight: bold;
+}
+
+/* Hero Section */
+.intro-section {
+  margin: 20px 0 0 30px;
+  line-height: 1.5;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Left Section */
+.left-section {
+  width: 750px;
+  margin-left: 30px;
+}
+
+.left-section h3 span {
+  font-size: 40px;
+}
+
+.left-section h1 {
+  font-size: 70px;
+  font-family: 'Fredoka One',cursive;
+}
+
+.sub-headlines .sub-headline img {
+  background-color: var(--orange-dark);
+  border-radius: 50%;
+  padding: 6px; 
+  margin-right: 16px; 
+}
+
+.sub-headline {
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 500;
+  margin: 10px 0 12px 30px;
+}
+
+.sub-headlines {
+  margin: 50px 60px;
+}
+
+.text {
+  text-align: start;
+  color: var(--grey-light);
+  font-size: 14px;
+}
+
+.action-btns {
+  margin: 40px 0;
+}
+
+.action-btn {
+  background-color: var(--orange-dark);
+  color: var(--white);
+  padding: 20px 30px;
+  border: none;
+  border-radius: 28px;
+  font-weight: bold;
+  margin-right: 12px;
+  font-size: 20px;
+}
+
+/* Right Section */
+.right-section {
+  margin-top: -50px;
+  margin-right: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: space-around;
+  height: 100%;
+}
+
+.headphone-div {
+  position: relative;
+}
+
+.headphone-div .discount {
+  position: absolute;
+  left:-60px;
+  bottom: 55px;
+  width: 150px;
+}
+
+.headphone-div .discount-content {
+  position: absolute;
+  left: -20px;
+  bottom: 80px;
+  font-size: 20px;
+  color: var(--white);
+}
+
+.headphone-div .headphone {
+  margin-right: 30px;
+  width: 420px;
+}
+
+.dots {
+  display: flex;
+  width: 180px;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 30px 0;
+}
+
+.dot {
+  padding: 12px;
+  border-radius: 50%;
+}
+
+.yellow-dot {
+  background-color: var(--yellow); 
+}
+
+.tomato-dot {
+  background-color: var(--tomato);
+}
+
+.black-dot {
+  background-color: var(--black);
+}
+
+/* Responsive */
+@media screen and (max-width:800px) {
+  .nav-items {
+    display: none;
+  }
+  
+  .intro-section {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .text {
+    width: 600px;
+    text-align: justify;
+    margin-left: 20px;
+  }
+
+  .right-section {
+    margin: 0 0 30px 50px;
+
+  }
+
+  .action-btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
