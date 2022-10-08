@@ -4,8 +4,8 @@
 
 ## Topics learned in this project:
 
-- Flexbox properties
-- Responsiveness
+- **_Flexbox properties_**
+- **_Responsiveness_**
 
 ## Time required to complete: 2h
 
